@@ -8,13 +8,38 @@
 
 	<h:head>
 		<title>Input</title>
+		<style>
+			div {
+			  border: 1px solid gray;
+			  padding: 8px;
+			}
+			
+			h1 {
+			  text-align: center;
+			  text-transform: uppercase;
+			  color: #4CAF50;
+			}
+			
+			p {
+			  text-indent: 50px;
+			  text-align: justify;
+			  letter-spacing: 3px;
+			}
+			
+			a {
+			  text-decoration: none;
+			  color: #008CBA;
+			}
+		</style>
 	</h:head>
 	
 	<h:body>
-		<h1>Getting name</h1>
-		<h:form>
-			What is your name: <h:inputText placeholder="name" value="#{username}"/>
-			<h:commandButton value="Valider" action="Return.xhtml"/>
-		</h:form>
+		<div>
+			<h1>Getting name</h1>
+			<h:form align="center">
+				What is your name: <h:inputText placeholder="name" value="#{username}"/>
+				<h:commandButton value="Valider" action="Return.xhtml"/>
+			</h:form>
+		</div>
 	</h:body>
 </html>
