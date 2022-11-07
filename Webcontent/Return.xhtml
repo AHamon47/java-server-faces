@@ -7,14 +7,11 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 	<h:head>
-		<title>Input</title>
+		<title>Return</title>
 	</h:head>
 	
 	<h:body>
-		<h1>Getting name</h1>
-		<h:form>
-			What is your name: <h:inputText placeholder="name" value="#{username}"/>
-			<h:commandButton value="Valider" action="Return.xhtml"/>
-		</h:form>
+		<h1>Returning name</h1>
+		Hello <h:outputText value="#{username}"/>, nice name !
 	</h:body>
 </html>
